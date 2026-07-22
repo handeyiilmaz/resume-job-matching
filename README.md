@@ -2,7 +2,7 @@
 
 A prototype resume–job matching system developed as part of the paper 
 *Group-Aware Resume–Job Matching: A Comparative Study of Text Representation 
-Methods on a Cleaned Large-Scale Recruitment Dataset* (Yılmaz et al., 2026).
+Methods on a Cleaned Large-Scale Recruitment Dataset* 
 
 The system matches candidate profiles to job descriptions using TF-IDF and 
 SBERT cosine similarity with group-aware filtering. Candidates are only 
