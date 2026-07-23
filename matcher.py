@@ -9,21 +9,25 @@ CANDIDATE_DATASET = "handeyilmaz/candidate-profiles-ready-to-use"
 
 
 def tfidf_match_label(score: float) -> str:
-    if score >= 0.35:
+    if score >= 0.053:
         return "Strong match"
-    elif score >= 0.20:
+    elif score >= 0.044:
         return "Good match"
-    else:
+    elif score >= 0.026:
         return "Possible match"
+    else:
+        return "No match"
 
 
 def sbert_match_label(score: float) -> str:
-    if score >= 0.65:
+    if score >= 0.429:
         return "Strong match"
-    elif score >= 0.50:
+    elif score >= 0.417:
         return "Good match"
-    else:
+    elif score >= 0.349:
         return "Possible match"
+    else:
+        return "No match"
 
 
 @st.cache_resource(show_spinner="Loading datasets and fitting TF-IDF vectorizers...")
